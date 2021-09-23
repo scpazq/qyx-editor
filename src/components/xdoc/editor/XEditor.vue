@@ -15,7 +15,7 @@
 
 <script>
 import Editor from '@tinymce/tinymce-vue'
-import {upload} from '@/utils/ali'
+// import {upload} from '@/utils/ali'
 
 /**
  * @property {String} value
@@ -158,23 +158,25 @@ export default {
                 },
                 urlconverter_callback: (url, node, onSave, name) => {
                     if (node === 'img' && url.startsWith('blob:')) {
-                        tinymce.activeEditor && tinymce.activeEditor.uploadImages()
+                        // tinymce.activeEditor && tinymce.activeEditor.uploadImages()
                     }
+                    console.log(onSave)
+                    console.log(name)
                     return url
                 },
-                images_upload_handler: (blobInfo, success, failure) => {
-                    let file = blobInfo.blob()
-                    upload(file, `/editor`).then(res => {
-                        if (res.res.status === 200) {
-                            let file = res.url;
-                            success(file);
-                            return
-                        }
-                        failure('上传失败')
-                    }).catch(() => {
-                        failure('上传出错')
-                    })
-                }
+                // images_upload_handler: (blobInfo, success, failure) => {
+                //     let file = blobInfo.blob()
+                //     upload(file, `/editor`).then(res => {
+                //         if (res.res.status === 200) {
+                //             let file = res.url;
+                //             success(file);
+                //             return
+                //         }
+                //         failure('上传失败')
+                //     }).catch(() => {
+                //         failure('上传出错')
+                //     })
+                // }
             },
             key: '',
             content: ''
@@ -205,7 +207,7 @@ export default {
     // border: 1px solid $border-color;
     outline: none;
     min-height: 32px;
-    border-radius: $border-radius;
+    // border-radius: $border-radius;
     line-height: 22px;
     padding: 4px 11px;
     transition: all 0.3s;
