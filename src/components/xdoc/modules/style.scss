@@ -1,0 +1,142 @@
+/**
+ * @Author: 孟祥涵
+ * @Email: 1056811341@qq.com
+ * @Date: 2021-03-27
+ * @Description: style
+ */
+/*.x-topic {
+    line-height: 1;
+    position: relative;
+    display: flex;
+
+    &:hover {
+        .handler {
+            &:before {
+                display: flex;
+            }
+        }
+    }
+
+    > .x-topic {
+        margin-left: 48px;
+    }
+
+    !*&__handler {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        margin-left: -32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }*!
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &__section {
+        flex: 1;
+    }
+
+    // 题号
+    &-number {
+        flex: 0 0 40px;
+        margin: 0 8px 0 0;
+
+        .ant-input {
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+
+            &[disabled] {
+                color: $text-color;
+                background-color: #fff;
+                cursor: default;
+                opacity: 1;
+                border: none;
+            }
+        }
+    }
+
+    // 题干
+    &-stem {
+        display: flex;
+        margin-bottom: 8px;
+
+        .x-editor {
+            flex: 1;
+        }
+    }
+
+    // 选项
+    &-option {
+
+        &__item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        &__handler {
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__number {
+            flex: 0 0 40px;
+            margin: 0 8px 0 0;
+            text-align: center;
+
+            .ant-input {
+                text-align: center;
+                padding-left: 0;
+                padding-right: 0;
+
+                &[disabled] {
+                    color: $text-color;
+                    background-color: #fff;
+                    cursor: default;
+                    opacity: 1;
+                    border: none;
+                }
+            }
+        }
+
+        &__content {
+            flex: 1;
+        }
+
+        &__action {
+            margin-left: 8px;
+            line-height: 32px;
+        }
+    }
+
+    // 答案
+    &-answer {
+        display: flex;
+        flex-wrap: wrap;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border: $border-color solid 1px;
+            border-radius: $border-radius;
+
+            &:not(:last-child) {
+                margin-right: 4px;
+            }
+
+            &--active {
+                border-color: $color-primary;
+                color: $color-primary;
+            }
+        }
+    }
+}*/
